@@ -9,10 +9,12 @@ type Point struct {
 	x, y int
 }
 
+// NewPoint Конструктор
 func NewPoint(newX, newY int) *Point {
 	return &Point{x: newX, y: newY}
 }
 
+// ComputeDistance Поиск дистанции
 func (p *Point) ComputeDistance(p2 Point) float64 {
 	xDelta, yDelta := p.x-p2.x, p.y-p2.y
 	xSq, ySq := xDelta*xDelta, yDelta*yDelta

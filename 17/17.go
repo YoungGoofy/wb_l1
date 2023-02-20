@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	source := []int{-15, -2, 1, 2, 5, 6, 23, 33, 34}
